@@ -24,6 +24,18 @@
   text-transform: uppercase;
 }
 
+.title span {
+  display:inline-block;
+}
+
+.title span::after {
+  content: "";
+  display: block;
+  background: #ddd;
+  height: 10px;
+  margin-top: -15px;
+}
+
 header {
   display: flex;
   align-items: center;
