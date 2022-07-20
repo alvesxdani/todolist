@@ -48,6 +48,7 @@ function App() {
       <ToastContainer />
 
       <div className='todo'>
+        <div className='title'>To Do List</div>
         <header>
           <input type="text" placeholder="Digite sua tarefa" value={task} onChange={(ev) => setTask(ev.target.value)} />
           <button onClick={handleCreateTask}><BiPlus /></button>

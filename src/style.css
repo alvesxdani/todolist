@@ -1,3 +1,4 @@
+
 .app {
   display: flex;
   justify-content: center;
@@ -5,7 +6,8 @@
 }
 
 .todo {
-  margin-top: 3rem;
+  background: #fff;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -13,6 +15,13 @@
   width: 400px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+.title {
+  font: bold 25px 'Source Sans Pro', sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 header {
@@ -24,18 +33,23 @@ header {
 }
 
 header button {
-  background: #f7f7f7;
-  color: #515151;
-  font-size: 20px;
+  background: #694ab0;
+  color: #fff;
   border: 1px solid #eee;
   padding: 0.4rem;
   border-radius: 3px;
   transition: .8s ease-out;
   cursor: pointer;
+  display:flex;
 }
 
 header button:hover {
   filter: brightness(0.9);
+}
+
+button svg {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 header input {
@@ -87,7 +101,7 @@ header input:focus {
 }
 
 .checkbox-container input:checked ~ .checkmark {
-  background: #aaa;
+  background: #694ab0;
   transition: .8s ease-out;
 }
 
@@ -116,8 +130,9 @@ header input:focus {
 }
 
 .task-container svg {
-  font-size:18px;
+  font-size: 20px;
   cursor: pointer;
+  color: #694ab0;
 }
 
 .task-container.completed p {

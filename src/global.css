@@ -7,4 +7,9 @@
 
 body {
   font: 12px 'Source Sans Pro', sans-serif;
+  background: #f7f7f7;
+}
+
+.bg-wavy {
+  margin-bottom: 0;
 }
